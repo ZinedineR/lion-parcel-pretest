@@ -6,8 +6,10 @@ import (
 )
 
 func trianglePrint(input int) {
+	//handle positif int, basically hanya perlu print * sejumlah angka terkecil setelah 0 dari input, print * lalu print newline
+	//terdapat dua loop, loop pertama adalah loop dari angka terkecil setelah 0 ke jumlah input
+	//loop kedua berada di dalam loop pertama, print * sejumlah angka loop pertama
 	if input > 0 {
-		// Print normal triangle
 		for i := 1; i <= input; i++ {
 			for j := 0; j < i; j++ {
 				fmt.Print("*")
